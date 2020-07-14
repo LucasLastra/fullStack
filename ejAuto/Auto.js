@@ -1,20 +1,9 @@
 "use strict";
 exports.__esModule = true;
 var fs = require("fs");
+var ReadlineSync = require("readline-sync");
+var pregunta = ReadlineSync.question('hola');
 var texto = fs.readFileSync('ejAuto/autos.txt', 'utf8');
-var temp1 = texto.split('\r\n');
-var temp2;
-var autos = [];
-for (var i = 0; i < temp1.length; i++) {
-    autos[i] = [];
-    temp2 = [];
-    temp2 = temp1[i].split(',');
-    for (var j = 0; j < 3; j++) {
-        autos[i][j] = temp2[j];
-    }
-}
-console.log(autos);
-console.log(autos[0][2]);
 var Auto = /** @class */ (function () {
     function Auto(marchaInicial, velocidadInicial, giroInicial) {
         this.marchaActual = marchaInicial;
@@ -49,8 +38,24 @@ var Auto = /** @class */ (function () {
     return Auto;
 }());
 var RegistroAutomotor = /** @class */ (function () {
-    function RegistroAutomotor() {
+    function RegistroAutomotor(marca, modelo, velMax) {
+        this.temp1 = texto.split('\r\n');
+        this.autos = [];
     }
+    RegistroAutomotor.prototype.buscar = function () {
+        for (var i = 0; i < this.temp1.length; i++) {
+            this.autos[i] = [];
+            this.temp2 = [];
+            this.temp2 = this.temp1[i].split(',');
+            for (var j = 0; j < 3; j++) {
+                this.autos[i][j] = this.temp2[j];
+            }
+        }
+        console.log(this.autos);
+        console.log(this.autos[0][2]);
+    };
+    RegistroAutomotor.prototype.agregar = function () {
+    };
     return RegistroAutomotor;
 }());
 var marchaInicial = 1;
@@ -71,3 +76,4 @@ for (var i = 0; i < 3; i++) {
 auto1.velocidad(0);
 auto1.prenderApagar();
 console.log(auto1);
+var registro1 = new RegistroAutomotor('honda', 2020, 200);

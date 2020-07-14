@@ -1,4 +1,6 @@
 import * as fs from 'fs';
+import * as ReadlineSync from 'readline-sync';
+
 let texto:string = fs.readFileSync('ejAuto/autos.txt', 'utf8');
 class Auto {
     private estaPrendido: boolean;
@@ -37,7 +39,7 @@ class Auto {
     }
 }
 class RegistroAutomotor{
-    constructor() {
+    constructor(marca:string,modelo:number,velMax:number) {
 
     }
     private temp1:string [] = texto.split('\r\n');
@@ -55,7 +57,18 @@ class RegistroAutomotor{
         console.log(this.autos);
         console.log(this.autos[0][2]); 
     }
+    agregar():void{
+        let marca:string= ReadlineSync.question('Que marca es el auto? ');
+        let modelo:number= ReadlineSync.questionInt('Que modelo es el auto? ');
+        let velMax:number= ReadlineSync.questionInt('Que velocidad max. tiene el auto? ');
+        let nuevoRegistro = new RegistroAutomotor(marca, modelo,velMax);
+    }
+    actualizar():void{
+        for(let i:number;i<this.autos.length;i++){
+            console.log(this.autos[i])
+        }
 
+    }
 
 
 }
@@ -64,9 +77,7 @@ let marchaInicial: number = 1;
 let velocidadInicial:number = 0;
 let giroInicial:number = 180;
 let auto1 = new Auto(marchaInicial, velocidadInicial, giroInicial);
-
 console.log(auto1);
-
 auto1.prenderApagar();
 auto1.velocidad(180);
 auto1.subirMarcha();
@@ -77,9 +88,11 @@ for(let i:number = 0;i< 3; i++){
     auto1.frenar()
     auto1.bajarMarcha()
 }
-
-
 auto1.velocidad(0);
 auto1.prenderApagar();
-
 console.log(auto1);
+
+
+let registro1 = new RegistroAutomotor('honda', 2020, 230);
+
+

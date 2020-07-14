@@ -7,11 +7,14 @@
     "tv": "tsc ejTelevisor/Televisor.ts & node ejTelevisor/Televisor.js",
     "auto": "tsc ejAuto/Auto.ts & node ejAuto/Auto.js",
     "monitor": "tsc ejMonitor/Monitor.ts & node ejMonitor/Monitor.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "matriz": "tsc ejMatriz/Matriz.ts & node ejMatriz/Matriz.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tvCod": "tsc ejTelevisor/TelevisorCod.ts & node ejTelevisor/TelevisorCod.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^14.0.22"
+    "@types/node": "^14.0.22",
+    "readline-sync": "^1.4.10"
   }
 }
