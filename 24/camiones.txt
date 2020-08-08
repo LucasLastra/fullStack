@@ -1,0 +1,6 @@
+volvo,2008,100,diesel,4
+ford,2000,80,diesel,4
+renault,2020,150,diesel,4
+toyota,2014,120,diesel,4
+bmw,2020,160,diesel,4
+mercedes,2010,130,diesel,4

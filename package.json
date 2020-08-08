@@ -1,0 +1,17 @@
+{
+  "name": "POO",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "registroNuevo": "tsc ./24/registroAutoPlus.ts && node ./24/registroAutoPlus.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "readline-sync": "^1.4.10"
+  }
+}
