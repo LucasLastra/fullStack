@@ -21,8 +21,8 @@ var registroCamiones = [];
 var registrosAutos;
 var registrosCamiones;
 var registrosMotos;
-var RegistroAutomotor = /** @class */ (function () {
-    function RegistroAutomotor(marcaIni, modeloIni, velMaxIni, motorIni, ruedasIni) {
+var RegistroAutos = /** @class */ (function () {
+    function RegistroAutos(marcaIni, modeloIni, velMaxIni, motorIni, ruedasIni) {
         this.ruedas = new Ruedas;
         this.motor = new Motor;
         if (!marcaIni) {
@@ -56,7 +56,7 @@ var RegistroAutomotor = /** @class */ (function () {
             this.ruedas.numRuedas = ruedasIni;
         }
     }
-    RegistroAutomotor.prototype.buscar = function () {
+    RegistroAutos.prototype.buscar = function () {
         var busqueda = ReadlineSync.question('Que marca es el auto? ');
         for (var i = 0; i < registroAutos.length; i++) {
             if (busqueda == registroAutos[i][0]) {
@@ -64,7 +64,7 @@ var RegistroAutomotor = /** @class */ (function () {
             }
         }
     };
-    RegistroAutomotor.prototype.agregar = function (marcaIni, modeloIni, velMaxIni) {
+    RegistroAutos.prototype.agregar = function (marcaIni, modeloIni, velMaxIni) {
         if (!marcaIni) {
             this.marca = ReadlineSync.question('Que marca es el auto? ');
         }
@@ -86,9 +86,9 @@ var RegistroAutomotor = /** @class */ (function () {
         registroAutos[registroAutos.length] = [this.marca, this.modelo, this.velMax];
         console.log(registroAutos);
     };
-    RegistroAutomotor.prototype.actualizar = function () {
+    RegistroAutos.prototype.eliminar = function () {
     };
-    return RegistroAutomotor;
+    return RegistroAutos;
 }());
 var RegistroMotos = /** @class */ (function (_super) {
     __extends(RegistroMotos, _super);
@@ -117,17 +117,17 @@ var RegistroMotos = /** @class */ (function (_super) {
         return _this;
     }
     return RegistroMotos;
-}(RegistroAutomotor));
+}(RegistroAutos));
 var RegistroCamiones = /** @class */ (function (_super) {
     __extends(RegistroCamiones, _super);
-    function RegistroCamiones(marcaIni, modeloIni, velMaxIni, motorIni, ruedasIni) {
+    function RegistroCamiones() {
         var _this = _super.call(this) || this;
         _this.ruedas.numRuedas = '4';
         _this.motor.tipoMotor = 'diesel';
         return _this;
     }
     return RegistroCamiones;
-}(RegistroAutomotor));
+}(RegistroAutos));
 var Ruedas = /** @class */ (function () {
     function Ruedas() {
     }
@@ -138,7 +138,9 @@ var Motor = /** @class */ (function () {
     }
     return Motor;
 }());
-var ej = new RegistroCamiones('asd', 'asd', 'asd', 'asd', 'asd');
+var asd = new RegistroAutos('asd', 'asd', 'asd', 'asd', 'asd');
+console.log(asd);
+var ej = new RegistroCamiones('camion', 'camion', 'camion', 'camion');
 console.log(ej);
 function cargar() {
     var autos = fs.readFileSync('24/autos.txt', 'utf8');
@@ -149,7 +151,7 @@ function cargar() {
         var temp2;
         for (var i = 0; i < temp1.length; i++) {
             temp2 = temp1[i].split(',');
-            registrosAutos = new RegistroAutomotor(temp2[0], temp2[1], temp2[2], temp2[3], temp2[4]);
+            registrosAutos = new RegistroAutos(temp2[0], temp2[1], temp2[2], temp2[3], temp2[4]);
             registroAutos[i] = registrosAutos;
         }
         temp1 = motos.split('\r\n');
@@ -167,7 +169,6 @@ function cargar() {
     }
     loadData();
 }
-cargar();
 console.log(registroAutos);
 console.log(registroMotos);
 console.log(registroCamiones);
