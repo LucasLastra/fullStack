@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "registroNuevo": "tsc ./24/registroAutoPlus.ts && node ./24/registroAutoPlus.js",
+    "mouse": "tsc ./26/enClase/mouse.ts && node ./26/enClase/mouse.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -1,6 +1,0 @@
-zanella,2008,100,nafta,2
-yamaha,2000,130,nafta,2
-motomel,2020,200,nafta,2
-honda,2014,150,nafta,2
-gilera,2020,110,nafta,2
-bmw,2019,240,nafta,2

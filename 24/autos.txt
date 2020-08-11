@@ -1,6 +1,0 @@
-fiat,2008,130,gnc,4
-ford,2000,180,diesel,4
-renault,2020,220,nafta,4
-peugeot,2014,150,diesel,4
-bmw,2020,250,nafta,4
-mercedes,2010,210,nafta,4
