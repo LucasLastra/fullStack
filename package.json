@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "mouse": "tsc ./26/enClase/mouse.ts && node ./26/enClase/mouse.js",
+    "go": "tsc ./25/enClase.ts && node ./25/enClase.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
