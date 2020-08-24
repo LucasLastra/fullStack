@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+
     "kiosco": "tsc ./28/kiosco/inicio-ejecucion.ts && node ./28/kiosco/inicio-ejecucion.js",
+    "go": "tsc ./26/aviones.ts && node ./26/aviones.js",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
