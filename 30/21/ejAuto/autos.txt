@@ -1,0 +1,6 @@
+fiat,2008,130
+ford,2000,180
+renault,2020,220
+peugeot,2014,150
+bmw,2020,250
+mercedes,2010,210
