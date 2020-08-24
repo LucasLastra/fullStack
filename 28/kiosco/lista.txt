@@ -1,0 +1,12 @@
+1,caramelos,12
+2,chupetines,29
+3,gomitas,8
+4,chicles,21
+5,pan,55
+6,yogurt,45
+7,leche,32
+8,crema,36
+9,dulce de leche,60
+10,queso,84
+11,jamon,46
+12,salame,206
