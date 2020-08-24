@@ -1,0 +1,33 @@
+Enumerar tres funcionalidades de NPM y describirlas
+
+npm install: Se utiliza para instalar una libreria.
+npm init: Se utiliza para iniciar un proyecto nuevo, genera un archivo package.json.
+npm run: Inicia un script previamente definido en el package.json.
+
+
+¿Cuál es el beneficio de usar un lenguaje con tipos?
+
+La fácil comprensión del código, al mismo tiempo que generar buenas prácticas.
+
+
+¿A qué se le llama variable interna? ¿Por qué internas?
+
+Las variables internas están definidas como private o protected. De esta manera
+solo se puede acceder a ellas desde la misma clase o subclases, y no desde el exterior.
+Esto sirve para evitar errores al cambiar variables directamente,
+se obliga a utilizar los métodos.
+
+
+Explicar la diferencia entre composición y herencia
+
+La herencia sirve para evitar repetir código, se utiliza haciendo una clase superior
+con metodos y/o variables, de esta clase extenderán otras clases que puedan llegar
+a utilizar los mismos métodos/variables.
+En cambio, composición se le dice a la utilización de clases mas simples para
+componer clases mas complejas.
+
+
+Explicar el mecanismo que provee TypeScript para manejar
+casos en donde los parámetros que le llegan a un método son inválidos
+
+Typescript evita que se produzca un error cambiando el tipo del metodo.
