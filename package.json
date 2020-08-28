@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "kiosco": "tsc ./29/kiosco/inicio-ejecucion.ts && node ./29/kiosco/inicio-ejecucion.js",
-    "telefono": "tsc ./29/telefonoInterface.ts && node ./29/telefonoInterface.js",
-    "autos": "tsc ./29/21/ejAuto/Auto.ts && node ./29/21/ejAuto/Auto.js",
+    "alumnos": "tsc 30/alumnos.ts && node 30/alumnos.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
