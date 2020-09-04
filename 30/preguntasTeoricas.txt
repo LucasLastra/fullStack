@@ -8,8 +8,14 @@ El comando 'tsc archivo.ts' genera un archivo de mismo nombre y código, pero en
 
 ¿Cómo está organizada una clase?
 
+Una clase está compuesta de su constructor (vacío o con variables iniciadas, etc.), variables, 
+ya sean public, protected o private y sus métodos. 
+
 
 ¿Es correcto que un método auxiliar de una clase sea público? ¿Por qué?
+
+No, puesto que no va a utilizarse desde afuera. 
+Externamente no importa que hace el programa por dentro.
 
 
 Enumerar las características de una interfaz
@@ -17,6 +23,7 @@ Enumerar las características de una interfaz
 Una interfaz se caracteriza por declarar metodos sin ser definidos internamente, 
 luego las clases que utilicen la interfaz, deberán tener sus métodos definidos.
 Todos los metodos de una interfaz deben ser public.
+
 
 Nombrar al menos dos patrones de diseño, y en qué casos se utilizan
 

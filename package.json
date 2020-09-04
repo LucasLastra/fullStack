@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "alumnos": "tsc 30/alumnos.ts && node 30/alumnos.js",
+    "phone": "tsc 30/telefonoInterface.ts && node 30/telefonoInterface.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
