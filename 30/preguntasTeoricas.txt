@@ -1,0 +1,40 @@
+¿Para qué sirve una task de NPM?
+Se utiliza para poder correr en un solo comando varias acciones, 
+por ejemplo 'tsc ejemplo.ts && node ejemplo.js'
+
+¿Qué pasa cuando se corre el comando “tsc”?
+
+El comando 'tsc archivo.ts' genera un archivo de mismo nombre y código, pero en lenguaje javascript. 
+
+
+¿Cómo está organizada una clase?
+
+Una clase está compuesta de su constructor (vacío o con variables iniciadas, etc.), variables, 
+ya sean public, protected o private y sus métodos. 
+
+
+¿Es correcto que un método auxiliar de una clase sea público? ¿Por qué?
+
+No, puesto que no va a utilizarse desde afuera. 
+Externamente no importa que hace el programa por dentro.
+
+
+Enumerar las características de una interfaz
+
+Una interfaz se caracteriza por declarar metodos sin ser definidos internamente, 
+luego las clases que utilicen la interfaz, deberán tener sus métodos definidos.
+Todos los metodos de una interfaz deben ser public.
+
+
+Nombrar al menos dos patrones de diseño, y en qué casos se utilizan
+
+Singleton: se utiliza cuando es necesario que haya una sola instancia de la clase,
+por ejemplo en un login.
+Mediator: Se utiliza cuando varios objetos interactuan entre si, para que funcione como un medio en comun
+para los mismos, y así evitar la complejidad y abstraer las interacciones.
+
+
+¿Cómo se hace para definir un error nuevo en TypeScript?
+
+Se debe hacer una clase que extienda de la clase 'Error'. Esta nueva clase funciona como cualquier otra clase,
+por ejemplo se puede modificar su variable interna 'name', de manera que el nombre del error que se muestre sea distinto.

@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
 
+    "alumnos": "tsc 30/alumnos.ts && node 30/alumnos.js",
+    "phone": "tsc 30/telefonoInterface.ts && node 30/telefonoInterface.js",
+
+
     "ejemplo": "tsc ./27/enClase/interfaz.ts && node ./27/enClase/interfaz.js",
     "phone": "tsc ./27/enClase/telefonoInterfaz.ts && node ./27/enClase/telefonoInterfaz.js",
     "autos": "tsc ./27/enClase/autos.ts && node ./27/enClase/autos.js",
@@ -12,6 +16,7 @@
 
     "kiosco": "tsc ./28/kiosco/inicio-ejecucion.ts && node ./28/kiosco/inicio-ejecucion.js",
     "go": "tsc ./26/aviones.ts && node ./26/aviones.js",
+
 
 
     "test": "echo \"Error: no test specified\" && exit 1"
