@@ -1,5 +1,6 @@
 ¿Para qué sirve una task de NPM?
-
+Se utiliza para poder correr en un solo comando varias acciones, 
+por ejemplo 'tsc ejemplo.ts && node ejemplo.js'
 
 ¿Qué pasa cuando se corre el comando “tsc”?
 
@@ -26,6 +27,11 @@ Todos los metodos de una interfaz deben ser public.
 
 
 Nombrar al menos dos patrones de diseño, y en qué casos se utilizan
+
+Singleton: se utiliza cuando es necesario que haya una sola instancia de la clase,
+por ejemplo en un login.
+Mediator: Se utiliza cuando varios objetos interactuan entre si, para que funcione como un medio en comun
+para los mismos, y así evitar la complejidad y abstraer las interacciones.
 
 
 ¿Cómo se hace para definir un error nuevo en TypeScript?
